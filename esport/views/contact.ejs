@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Esports</title>
+<meta name='discription' content="esports">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../assets/contact.css">
+</head>
+
+<!-- Navigation  Bar-->
+<%- include('partials/nav.ejs'); -%>
+
+<main>
+    <!-- Contact Form-->
+    <div class='form'>
+    <h1>Contact Us</h1>
+        <div class=contact>
+            <form name="emailForm" id="form" action="mailto:pengherr98@hotmail.com" method="post">
+                <label for ="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstname" placeholder="First" required >
+                <label for ="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastname" placeholder="Last" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <p id="suggestion"></p>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type here..." required></textarea>
+                <input  name="Submit" type="submit" value="Submit" >
+            </form>      
+        </div>
+    </div>
+</main>
+
+<!-- Footer Navigation  Bar-->
+<%- include('partials/foot.ejs'); -%>
+</body>
+</html>

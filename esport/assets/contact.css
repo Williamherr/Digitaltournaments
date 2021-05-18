@@ -1,0 +1,45 @@
+/*Text for the user to enter*/
+label {
+    color: rgb(216, 216, 216)
+}
+/*Form outline*/
+.form {
+    margin-left: 30%;
+    margin-top: 50px;
+}
+/*Changes the inside of the form*/
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 10px; 
+    border-radius: 2px; 
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 20px; 
+    resize: vertical; 
+}
+
+/*Submit button*/
+input[type=submit] {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: black 1px solid;
+  border-radius: 6px;
+  height: 35px;
+  width: 90px;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(13, 179, 13, .5);
+  color: black;
+}
+  
+/* Changes the form*/
+.contact  {
+  border-radius: 4px;
+  background-color: #292929 ;
+  padding: 20px;
+  width:500px;
+  border: black; 
+}

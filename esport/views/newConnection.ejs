@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Connection</title>
+<meta name='discription' content="connection">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../assets/contact.css">
+
+</head>
+<body>
+<!-- Navigation  Bar-->
+<%- include('partials/nav.ejs'); -%>
+    
+<main>
+    <div class='form'>
+        <h1>New Connections</h1>
+        <div class=contact>
+            <form id="form" action="/UserController/newConnection" method="POST">
+                <label for ="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name"  >
+                <label for ="topic">Topic</label>
+                <input type="text" id="topic" name="topic" placeholder="Topic"  >
+                <label for="details">Details</label>
+                <textarea id="details" value="details" name="details" placeholder="description..." ></textarea>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="location" >
+                <label for="sTime">Time</label>
+                <input type="time" id="sTime" name="sTime"  placeholder="time" required>
+                <label for="eTime"> to </label>
+                <input type="time" id="eTime" name="eTime" placeholder="time" required><br><br>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" ><br><br>
+                <input  name="Submit" type="submit" value="Submit">
+            </form>      
+        </div>
+    </div>
+</main>
+
+<!-- Footer Navigation  Bar-->
+
+<%- include('partials/foot.ejs'); -%>
+</body>
+</html>

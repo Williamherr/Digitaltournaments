@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Connection</title>
+<meta name='discription' content="connection">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../assets/connections.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="../assets/connections.js"></script>
+</head>
+<body>
+<!-- Navigation  Bar-->
+<%- include('partials/nav.ejs'); -%>
+    
+    <main>
+    <% if(typeof Data != 'undefined') { %>
+        <h1><%=Data.connectionTopic%></h1>
+        <div class='container'>
+            <a href="#" title="<%= Data.connectionName %>" ><%= Data.connectionName %></a> <br>
+        </div>
+    <% }
+    else { %>
+        <%for (var j = 0; j < list.length; j++) { %>
+            <h1><%= list[j] %></h1>
+            <% for (var i = 0; i < qs.length; i++) { %>
+                <% if (list[j] == qs[i].connectionTopic) { %>
+                <div class='container'>
+                    <a href="/connections/<%=qs[i].connectionId%>" title="<%= qs[i].connectionName %>" ><%= qs[i].connectionName %></a> <br>   
+                </div> 
+                <% } %>
+            <% } %>
+        <% } %>             
+    <% } %>    
+    </main>
+
+<!-- Footer Navigation  Bar-->
+
+<%- include('partials/foot.ejs'); -%>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    margin:0;
+    padding:0;
+    background-color: rgb(172, 172, 172);
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*List for naviation bar*/
+
+.name {
+    margin-top: 20px;
+    color: rgb(216, 216, 216);
+    float:right; 
+}
+
+
+ul {
+    /*Makes sure there isn't any bullet point and */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+   /*User Specific Navigation*/
+.userN { 
+    margin-right: 5%;
+
+}
+ /*User Specific Navigation to the right */
+.userN li a {
+    float: Right;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/*Navigation Bar*/
+.nav {
+    height: 50px;
+    border: 1px none;
+    width: 100%;  
+    background-color: rgb(56, 56, 56);
+}
+/*Makes the naviation towards the right*/
+/* Makes sure the nav list looks blocky and are nicely aligned*/
+li a {
+    float:Left;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    color:rgb(216, 216, 216);
+    font-size: 18px;
+
+}
+/* Changes the color when the navigation is hovered*/
+li a:hover {
+    background-color:rgb(13, 179, 13);
+    color: black;
+    text-decoration: none;
+}
+
+/*Footer Navigation bar*/
+footer .nav {
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;  
+    border-top: 1px solid black;
+}
+
+/*Images*/
+
+img{
+    width: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: 25%;
+    margin-top: 20px;
+    
+}
+
+p{  
+    font-size: 20px;
+}
+.logo {
+    border: none;
+    float:left; 
+    height: 10px;
+    margin-top: -10px;
+    width: 200px;
+}
+.logo img {
+    margin-top: 5px;
+    margin-left: 5px;
+    max-width: 100%;
+}
+.description {
+    border: none;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.copy {
+    color:white;
+    border: none;
+    float:left; 
+    width: 200px;
+    margin-top: 15px;
+}
+

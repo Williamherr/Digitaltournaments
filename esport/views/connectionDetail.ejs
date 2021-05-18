@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Connection</title>
+<meta name='discription' content="connectionDetail">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../assets/connections.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<!-- Navigation  Bar-->
+<%- include('partials/nav.ejs'); -%>
+
+    <main>
+        <div class='body'>
+            <h1><%=Data.connectionName%></h1><br><br>          
+            <div class='container'><div class='imgBox'> <img class='newImg' src="<%=Data.img%>"> </div>
+            <h2>Hosted by <%=Data.host%></h2>                  
+            <h2><%=Data.date%></h2>                            
+            <h2><%=Data.time%></h2>                           
+            <h2>Location: <%=Data.location%></h2>             
+            </div> <div class='buttonBox'><h2>Are You Going?</h2> 
+            <button class='buttons'  id='yes' onclick="location.href='/UserController/rsvp?rsvp=<%=true%>&id=<%=Data.connectionId%>'">Yes</button>
+            <button class='buttons' id='no' onclick="location.href='/UserController/rsvp?rsvp=<%=false%>&id=<%=Data.connectionId%>'">No</button>
+            <button class='buttons'  id='maybe' onclick="location.href='/UserController/rsvp?id=<%=Data.connectionId%>'">Maybe</button>
+            </div> <br><br><br><br>
+            <h1>Details</h1><p> <%=Data.details%> </p></div>        
+        </div>
+    </main>
+
+<!-- Footer Navigation  Bar-->
+<%- include('partials/foot.ejs'); -%>
+</body>
+</html>

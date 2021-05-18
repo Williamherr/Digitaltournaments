@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Esports</title>
+<meta name='discription' content="esports">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../assets/login.css">
+</head>
+
+<body>
+<!-- Navigation  Bar-->
+<%- include('partials/nav.ejs'); -%>
+<main>
+    
+    
+    <div class='login'>
+    <h1>Welcome to Digital Tournaments</h1>
+    <!-- If logins fail, alert a fail login box-->
+    <% if (typeof log !== 'undefined') {%>
+        <div class='log'>
+            <p>Cannot find Username or Password</p>
+        </div>
+    <%}%>
+    <!--Login Form-->
+    <p>Sign-in</p>
+    <form action='/UserController' method='POST'>
+        <label for='username'>Username</label>
+        <input type='text' id='username' name='username' required><br>
+        <label for='password' >Password</label>
+        <input type='text' id='password' name='password' required><br>
+        <input type="submit" name='login' value='Login'>
+    </form>
+    </div>
+
+</main>
+<!-- Footer Navigation  Bar-->
+<%- include('partials/foot.ejs'); -%>
+</body>
+</html>

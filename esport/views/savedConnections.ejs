@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Connection</title>
+<meta name='discription' content="connection">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../assets/savedConnections.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="userProfile.js"></script>
+</head>
+<body>
+<!-- Navigation  Bar-->
+<%- include('partials/nav.ejs'); -%>
+<main>  
+
+<!-- Table -->
+
+<h1>Digital Tournaments Connections</h1>
+    <% if (qs.connection.length > 0 ) { %>
+        
+    <table >
+        <tr>
+        <th>Connection</th>
+        <th>Category</th>
+        <th>Going</th>
+        <th></th>
+        </tr>
+        <% for (var i = 0; i < qs.connection.length; i++) { %>
+        <tr>    
+            
+        <td><%=qs.connection[i].connectionName%></td>
+        <%console.log(qs.connection[i].connectionName)%>
+        <td><%=qs.connection[i].connectionTopic%></td>
+        <td><%=qs.rsvp[i]%></td>
+        <td> 
+            <button class='buttons' name='update' onclick="location.href='/connections/<%=qs.connection[i].connectionId%>'">Update</button>
+            <button class='buttons' name='delete' onclick="location.href='/UserController/delete?Id=<%=qs.connection[i].connectionId%>'">Delete</button>
+        </td>
+        <% } %>
+    </table>
+    <% } else { %>
+    <br><p>No Connections</p>
+    <% } %>
+
+</main> 
+
+<!-- Footer Navigation  Bar-->
+
+    <%- include('partials/foot.ejs'); -%>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<link href="/assets/index.css" rel="stylesheet" type="text/css"/>
+
+
+<!-- Navigation  Bar-->
+<div class='nav'>
+    <ul class= 'userN'>      
+        <% if (typeof profile != 'undefined') { %>
+            <li><a href="/newConnection">New Connection</a></li>
+            <li><a href="/savedConnections">Your Connections</a></li>
+            <li><a href="/UserController/logout">Logout</a></li>
+            
+        <% } else {%>
+            <li><a href="/UserController">Login</a></li>
+            <li><a href="/UserController">Sign Up</a></li>
+            <% }%>
+       
+        <li><div class='logo'><a href="/"><img  src="/assets/pics/WhiteLogo.png" alt="DTlogo"></a></div></li>
+    </ul>
+</div>
+
+<div class='nav'>
+    <ul >
+        <li><a href="/">Home</a></li>
+        <li><a href="/connections">Connection</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li ><p href="" class='name'></p></li>
+        <% if (typeof profile != 'undefined') { %>
+            <ul class= 'userN'>
+            <li class='name'><%= name.username %></li>
+            </ul>
+        <% } %>
+       
+    </ul>
+</div>
+<!-- Navigation  Bar-->
+

@@ -1,0 +1,76 @@
+{"tournaments":[
+
+    {
+		"title": "League of Legends Tournament",
+        "name": "League of Legends Tournament",
+        "image": "/assets/pics/twitch.jpg",
+        "host": "Twitch",
+        "date": "Wednesday, Feburary 10 2021",
+        "time": "12:30Am - 4:30pm",
+        "location": "Online",
+        "detail": "Join the League of Legends Tournament hosted by Twitch. You must be in a group of 5 to join this tournament."
+
+	},
+    
+    {
+		"title": "Team Fight Tactics Tournament",
+        "name":"Team Fight Tactics Tournament",
+        "image": "/assets/pics/redBull.jpg",
+        "host": "Red Bull",
+        "date": "Friday, Feburary 12 2021",
+        "time": "2:30pm - 6:30pm",
+        "location": "Online",
+        "detail": "Join the Team Fight Tactics Tournament hosted by Red Bull. We are only accepting 40 people "
+
+	},
+ 
+    {
+		"title": "Dota2 Tournament",
+        "name": "Dota2 Tournament",
+        "image": "/assets/pics/logo.png",
+        "host": "Digital Tournaments",
+        "date": "Friday, March 19 2021",
+        "time": "12:00Am - 4:30pm",
+        "location": "Online",
+        "detail": "Join the Dota2 Tournament hosted by Digital Tournaments. You must be in a group of 5 to join this tournament."
+
+    }],
+
+"friends":[
+    {
+		"title": "Leauge of Legends",
+        "name": "Leauge of Legends",
+        "image": "/assets/pics/gamers.jpg",
+        "host": "William Herr",
+        "date": "Wednesday, Feburary 10 2021",
+        "time": "5:30pm - 6:30pm",
+        "location": "Discord",
+        "detail": "Create new friends by playing League of Legends(LOL) with new people. LOL is a free to play online battle arena video game. The game contains 2 teams of 5 players each with unqiue heros. To win the game, the 1 team must destroy the other team's base."
+
+	},
+
+    {
+		"title": "Team Fight Tactics",
+        "name": "Team Fight Tactics",
+        "image": "/assets/pics/gamers.jpg",
+        "host": "William Herr",
+        "date": "Monday, Feburary 15 2021",
+        "time": "8:00pm - 9:00pm",
+        "location": "Discord",
+        "detail": "Create new friends by playing Team Fight Tactics(TFT) with new people. TFT is a free to play online chess game. The game contains collecting strong champions and placing them on a board. Last player to survive wins.  "
+
+	},
+
+    {
+		"title": "Genshin Impact",
+        "name": "Genshin Impact",
+        "image": "/assets/pics/gamers.jpg",
+        "host": "William Herr",
+        "date": "Wednesday, Feburary 10 2021",
+        "time": "7:00pm - 8:00pm",
+        "location": "Discord",
+        "detail": "Create new friends by playing Genshin Impact with new people. Genshin Impact is a free to play open world RPG game. Meet new friends, fight some epic monster, collect characters, and travel around the world."
+
+	}
+]
+}

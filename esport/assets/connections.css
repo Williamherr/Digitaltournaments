@@ -1,0 +1,76 @@
+
+
+/*Image of the Host*/
+.newImg {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px;
+    border: none;
+}
+
+.imgBox {
+    float: left;
+    border: none;
+    height: 200px;
+    width: 200px;
+    padding-right: 20px;
+}
+/* Div box of the body */
+.body {
+    max-width: 80%;
+    border: none 5px;
+    margin-top: 50px;
+    
+}
+
+/*Holds the content of the page*/
+.container {
+    width: 50%;
+    border: none;
+    margin:auto 20%;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+.container a {
+    font-size: 20px;
+}
+
+.buttonBox {
+    border: none;
+    position: relative;
+    float: right;
+    bottom:220px;
+    width: 160px;
+    right:10%;
+}
+.buttons {
+    color:white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 20px;
+    margin: 4px 28px;
+    width: 100px;
+}
+#yes {
+    background-color: green;
+}
+#no {
+    background-color: red;
+}
+#maybe{
+    background-color: blue;
+}
+
+
+main h1, main p {
+    margin-left: 20%;
+    
+}
